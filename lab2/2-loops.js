@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function range(start, end) {
     let array = [];
     for (let i = start; i <= end; i++)
@@ -15,22 +15,5 @@ function rangeOdd(start, end) {
         }
     return array;
 }
-=======
-function range(start, end) {
-    let array = [];
-    for (let i = start; i <= end; i++)
-        array.push(i);
-    return array;
-}
-console.log(range(15, 30));
 
-function rangeOdd(start, end) {
-    let array = [];
-    for (let i = start; i <= end; i++)
-        if (i % 2 === 1) {
-            array.push(i);
-        }
-    return array;
-}
->>>>>>> bebafca (Додано папку lab3)
 console.log(rangeOdd(15, 30));
