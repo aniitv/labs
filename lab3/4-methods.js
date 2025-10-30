@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const iface = {
     m1: x => [x],
     m2: function (x, y) {
@@ -14,20 +14,4 @@ const result = Object.keys(iface)
     .map(key => [key, iface[key].length]);
 
 console.log(result);
-=======
-const iface = {
-    m1: x => [x],
-    m2: function (x, y) {
-        return [x, y];
-    },
-    m3(x, y, z) {
-        return [x, y, z];
-    }
-};
 
-const result = Object.keys(iface)
-    .filter(key => typeof iface[key] === 'function')
-    .map(key => [key, iface[key].length]);
-
-console.log(result);
->>>>>>> 90a40211909d75e6ec83ef821dfaef3fca795b0a
